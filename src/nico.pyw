@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets
 from PyQt5.Qt import Qt
-from main import Ui_MainWindow
+from main_window import Ui_MainWindow
 import pyqtgraph as pg
 from pyqtgraph.Qt import QtCore, QtGui
 import numpy as np
@@ -8,7 +8,6 @@ from requests import get
 import json
 from datetime import datetime, timedelta
 from time import time
-import pyqtgraph as pg
 from jk import *
 
 
@@ -18,7 +17,7 @@ class MainWindow(QtWidgets.QMainWindow):
         ui = Ui_MainWindow()
         ui.setupUi(self)
 
-        self.ip = "192.168.0.2"
+        self.ip = "nasneのIPアドレス"
 
         self.graph = ui.graphicsView
         self.graph.hideAxis("left")
