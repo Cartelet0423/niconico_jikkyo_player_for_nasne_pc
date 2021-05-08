@@ -224,7 +224,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
 class Comment:
     def __init__(
-        self, content, parent, font="defont", color="white", size="mediam", place="naka"
+        self, content, parent, font="defont", color="white", size="medium", place="naka"
     ):
         self.content = content
         self.font = FONTS[font]

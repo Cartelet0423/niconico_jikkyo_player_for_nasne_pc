@@ -290,7 +290,7 @@ COLORS = {
     "purple2": "#6633CC",
     "black2": "#666666",
 }
-SIZES = {"mediam": 25, "small": 20, "big": 30}
+SIZES = {"medium": 25, "small": 20, "big": 30}
 
 MAIL = {
     "shita": "place",
