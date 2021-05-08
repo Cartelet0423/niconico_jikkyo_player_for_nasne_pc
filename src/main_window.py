@@ -88,6 +88,7 @@ class Ui_MainWindow(object):
         self.spup.setSizePolicy(sizePolicy)
         self.spup.setMaximumSize(QtCore.QSize(40, 40))
         font = QtGui.QFont()
+        font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
         self.spup.setFont(font)
