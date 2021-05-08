@@ -155,7 +155,7 @@ class MainWindow(QtWidgets.QMainWindow):
                     - st.dateTime().toPyDateTime()
                 ).total_seconds(),
                 i["chat"]["content"],
-                i["chat"].get("mail"),
+                i["chat"].get("mail") if i["chat"].get("mail") else "",
             ]
             for i in json.loads(resp.content)["packet"]
         ]
@@ -210,11 +210,7 @@ class MainWindow(QtWidgets.QMainWindow):
                     Comment(
                         comment[1],
                         self.graph,
-                        **{
-                            a: i
-                            for i in comment[2].split()
-                            if comment[2] and (a := MAIL.get(i))
-                        },
+                        **{a: i for i in comment[2].split() if (a := MAIL.get(i))},
                     )
                 )
 
