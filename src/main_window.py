@@ -92,8 +92,7 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.spup.setFont(font)
-        self.spup.setStyleSheet("color:#bbb;\n"
-"background-color:#222;")
+        self.spup.setStyleSheet("color:#bbb;")
         self.spup.setObjectName("spup")
         self.gridLayout_2.addWidget(self.spup, 0, 3, 1, 1)
         self.spdn = QtWidgets.QPushButton(self.centralwidget)
@@ -108,8 +107,7 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.spdn.setFont(font)
-        self.spdn.setStyleSheet("color:#bbb;\n"
-"background-color:#222;")
+        self.spdn.setStyleSheet("color:#bbb;")
         self.spdn.setObjectName("spdn")
         self.gridLayout_2.addWidget(self.spdn, 0, 1, 1, 1)
         self.speed = QtWidgets.QLabel(self.centralwidget)
